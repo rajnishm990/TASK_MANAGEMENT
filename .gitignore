@@ -1,0 +1,70 @@
+# Byte-compiled / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+*.env
+*.venv
+
+# Django specific
+db.sqlite3
+db.sqlite3-journal
+*.log
+media/
+staticfiles/
+static/
+*.pot
+*.pyc
+*.pyo
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore environment variables & config files
+.env
+*.ini
+*.cfg
+*.pem
+*.key
+
+# Celery & Task Queues
+celerybeat-schedule
+celerybeat.pid
+
+# Ignore coverage reports
+.coverage
+htmlcov/
+*.cover
+coverage.xml
+
+# Ignore build files
+build/
+dist/
+*.egg-info/
+*.whl
+
+# Ignore Docker files
+docker-compose.override.yml
+*.dockerfile
+
+# Ignore dependencies (pip, poetry)
+pip-log.txt
+pip-delete-this-directory.txt
+poetry.lock
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore migrations (optional)
+**/migrations/**
+
+# Ignore compiled Python files
+*.so
+*.dll
+*.dylib
