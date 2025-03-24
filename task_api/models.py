@@ -53,10 +53,10 @@ class Task(models.Model):
         return self.name
 
 class TaskAssignment(models.Model):
-    """
+    '''
     Intermediary model for the many-to-many relationship between tasks and users
     Allows tracking assignment metadata such as assignment date
-    """
+    '''
     task = models.ForeignKey(Task, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     assigned_at = models.DateTimeField(auto_now_add=True)
