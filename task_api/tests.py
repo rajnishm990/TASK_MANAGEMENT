@@ -95,7 +95,7 @@ class TaskAPITestCase(TestCase):
         url = reverse('task-unassign-users', args=[self.task.id])
         data = {'user_ids': [self.user1.id]}
         
-        response = self.client.post(url, data, format='json')
+        response = self.client.delete(url, data, format='json')
         
         
         self.assertEqual(response.status_code, status.HTTP_200_OK)
