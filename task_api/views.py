@@ -64,7 +64,7 @@ class TaskViewSet(viewsets.ModelViewSet):
         serializer = TaskAssignmentSerializer(assignments, many=True)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     
-    @action(detail=True, methods=['post'])
+    @action(detail=True, methods=['delete'])
     def unassign_users(self, request, pk=None):
         '''
         Remove task assignments for specified users
